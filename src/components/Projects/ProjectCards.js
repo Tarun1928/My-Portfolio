@@ -13,21 +13,33 @@ function ProjectCards(props) {
   src={props.imgPath}
   alt="card-img"
   style={{
-    width: "250px",
-    height: "250px",
-    objectFit: "contain", // ensures full image is visible
+    width: "100%",
+    maxWidth: "250px",
+    height: "auto",
+    aspectRatio: "1/1", // keeps it square while responsive
+    objectFit: "contain", // shows full image without cropping
     borderRadius: "10px",
     margin: "0 auto",
     display: "block",
-    backgroundColor: "#fff" // optional: for transparent PNGs or contrast
+    backgroundColor: "#fff" // optional: for transparency clarity
   }}
 />
 
-
-
-
       <Card.Body>
-        <Card.Title>{props.title}</Card.Title>
+      <Card.Title
+      style={{
+        fontWeight: "700",
+        fontSize: "1.3rem",
+        marginBottom: "0.75rem",
+        textAlign: "center",
+        color: "#bb86fc", // or another vibrant color
+        letterSpacing: "0.5px",
+        textTransform: "uppercase"
+        }}
+        >
+  {props.title}
+</Card.Title>
+
         <Card.Text style={{ textAlign: "justify" }}>
           {props.description}
         </Card.Text>

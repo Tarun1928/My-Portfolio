@@ -15,6 +15,7 @@ import ccml from "../../Assets/Projects/ccml.png";
 import c4 from "../../Assets/Projects/c4.png";
 import maze from "../../Assets/Projects/maze.png";
 import vacuum from "../../Assets/Projects/vacuum.png";
+import nqueen from "../../Assets/Projects/nqueen.png";
 
 function Projects() {
   return (
@@ -34,7 +35,7 @@ function Projects() {
             <ProjectCard
               imgPath={aad}
               isBlog={false}
-              title="ANALYSIS OF ABNORMAL ACTIVITY DETECTION IN OFFLINE SURVEILLANCE FOOTAGE"
+              title="Analysis of Abnormal Activity Detection in Offline Surveillance Footage"
               description="Developed a deep learning-based system to detect abnormal human activities (robbery, road accidents, and fighting) in offline surveillance footage. Implemented and compared pre-trained models—VGG-16, ResNet50, and 2D-CNN—using real-time video datasets from Kaggle. Achieved a testing accuracy of 99.99% with VGG-16, outperforming other models. Published in the International Journal for Innovative Engineering and Management Research (IJIEMR), Volume 12, Issue 04, April 2023"
              // ghLink="To be added"
               //demoLink="To be added"
@@ -47,7 +48,7 @@ function Projects() {
             <ProjectCard
               imgPath={scbds}
               isBlog={false}
-              title="SELFIE CAPTURING BY DETECTING SMILE"
+              title="Selfie capturing by Detecting Smile"
               description="This project focused on automatically capturing selfies by detecting smiles. Along with this main feature, we included additional functionalities like photo capture, image browsing, filters, video recording, and adding watermarks to images. The goal was to create a user-friendly interface on a laptop, similar to the experience of using a mobile camera.Chat Room or Workspace to share resources and hangout with friends build with react.js, Material-UI, and Firebase. Have features which allows user for realtime messaging, image sharing as well as supports reactions on messages."
              // ghLink="https://github.com/soumyajit4419/Chatify"
               //demoLink="https://chatify-49.web.app/"
@@ -122,7 +123,7 @@ function Projects() {
 
           <Col md={4} className="project-card">
             <ProjectCard
-              imgPath={emotion}
+              imgPath={nqueen}
               isBlog={false}
               title="Adaptive  N-Queens Problemn Solver"
               description="Engineered a solver for the N-Queens problem using both classical and heuristic approaches such as Backtracking, Simulated Annealing, and Genetic Algorithms. Compared performance based on solution accuracy and computational time, demonstrating algorithm trade-offs in constraint satisfaction problems."
