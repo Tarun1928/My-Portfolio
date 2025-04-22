@@ -21,25 +21,29 @@ function Projects() {
           Here are a few projects I've worked on recently.
         </p>
         <Row style={{ justifyContent: "center", paddingBottom: "10px" }}>
+
+       
+        <Col md={4} className="project-card">
+            <ProjectCard
+              imgPath={leaf}
+              isBlog={false}
+              title="ANALYSIS OF ABNORMAL ACTIVITY DETECTION IN OFFLINE SURVEILLANCE FOOTAGE"
+              description="Developed a deep learning-based system to detect abnormal human activities (robbery, road accidents, and fighting) in offline surveillance footage. Implemented and compared pre-trained models—VGG-16, ResNet50, and 2D-CNN—using real-time video datasets from Kaggle. Achieved a testing accuracy of 99.99% with VGG-16, outperforming other models. Published in the International Journal for Innovative Engineering and Management Research (IJIEMR), Volume 12, Issue 04, April 2023"
+             // ghLink="To be added"
+              //demoLink="To be added"
+            />
+          </Col>
+
+         
+
           <Col md={4} className="project-card">
             <ProjectCard
               imgPath={chatify}
               isBlog={false}
-              title="Chatify"
-              description="Personal Chat Room or Workspace to share resources and hangout with friends build with react.js, Material-UI, and Firebase. Have features which allows user for realtime messaging, image sharing as well as supports reactions on messages."
-              ghLink="https://github.com/soumyajit4419/Chatify"
-              demoLink="https://chatify-49.web.app/"
-            />
-          </Col>
-
-          <Col md={4} className="project-card">
-            <ProjectCard
-              imgPath={bitsOfCode}
-              isBlog={false}
-              title="Bits-0f-C0de"
-              description="My personal blog page build with Next.js and Tailwind Css which takes the content from makdown files and renders it using Next.js. Supports dark mode and easy to write blogs using markdown."
-              ghLink="https://github.com/soumyajit4419/Bits-0f-C0de"
-              demoLink="https://blogs.soumya-jit.tech/"
+              title="SELFIE CAPTURING BY DETECTING SMILE"
+              description="This project focused on automatically capturing selfies by detecting smiles. Along with this main feature, we included additional functionalities like photo capture, image browsing, filters, video recording, and adding watermarks to images. The goal was to create a user-friendly interface on a laptop, similar to the experience of using a mobile camera.Chat Room or Workspace to share resources and hangout with friends build with react.js, Material-UI, and Firebase. Have features which allows user for realtime messaging, image sharing as well as supports reactions on messages."
+             // ghLink="https://github.com/soumyajit4419/Chatify"
+              //demoLink="https://chatify-49.web.app/"
             />
           </Col>
 
@@ -47,10 +51,10 @@ function Projects() {
             <ProjectCard
               imgPath={editor}
               isBlog={false}
-              title="Editor.io"
-              description="Online code and markdown editor build with react.js. Online Editor which supports html, css, and js code with instant view of website. Online markdown editor for building README file which supports GFM, Custom Html tags with toolbar and instant preview.Both the editor supports auto save of work using Local Storage"
-              ghLink="https://github.com/soumyajit4419/Editor.io"
-              demoLink="https://editor.soumya-jit.tech/"              
+              title="Smart Hiring Web Application"
+              description="Designed and developed a job hiring portal using ReactJS to streamline the recruitment process. The application allows users to create profiles, explore job listings, and apply for roles tailored to their skills. Implemented features like advanced search filters and user-friendly interfaces to enhance user experience and accurately match candidates with opportunities.Designed and developed a job hiring portal using ReactJS to streamline the recruitment process. The application allows users to create profiles, explore job listings, and apply for roles tailored to their skills. Implemented features like advanced search filters and user-friendly interfaces to enhance user experience and accurately match candidates with opportunities."
+             // ghLink="https://github.com/soumyajit4419/Editor.io"
+              //demoLink="https://editor.soumya-jit.tech/"              
             />
           </Col>
 
@@ -58,10 +62,10 @@ function Projects() {
             <ProjectCard
               imgPath={leaf}
               isBlog={false}
-              title="Plant AI"
-              description="Used the plant disease dataset from Kaggle and trained a image classifer model using 'PyTorch' framework using CNN and Transfer Learning with 38 classes of various plant leaves. The model was successfully able to detect diseased and healthy leaves of 14 unique plants. I was able to achieve an accuracy of 98% by using Resnet34 pretrained model."
-              ghLink="https://github.com/soumyajit4419/Plant_AI"
-              demoLink="https://plant49-ai.herokuapp.com/"
+              title="Employee Management System - Modular Architecture Design "
+              description="Designed and developed a desktop-based Employee Management System (EMS) using a robust three-tier architecture combined with the MVC design pattern. The system supports key HR functionalities including employee onboarding, record updates, search, and deletion. The architecture ensures high scalability, modularity, and data security, aligning with enterprise software standards. Technologies used include Python and VS Code."
+             // ghLink="To be added"
+              //demoLink="To be added"
             />
           </Col>
 
@@ -69,10 +73,10 @@ function Projects() {
             <ProjectCard
               imgPath={suicide}
               isBlog={false}
-              title="Ai For Social Good"
-              description="Using 'Natural Launguage Processing' for the detection of suicide-related posts and user's suicide ideation in cyberspace  and thus helping in sucide prevention."
-              ghLink="https://github.com/soumyajit4419/AI_For_Social_Good"
-              // demoLink="https://www.youtube.com/watch?v=dQw4w9WgXcQ&ab_channel=RickAstley" <--------Please include a demo link here
+              title="COVID-19 Severity Classification Using ML"
+              description="Developed and compared multiple machine learning models—C4.5 Decision Tree, XGBoost, Conditional Inference Tree, and SVM—to classify U.S. counties based on COVID-19 severity using demographic, economic, and healthcare indicators. Achieved a peak accuracy of 94.56% with the C4.5 model, providing actionable insights for public health resource allocation and policy decisions."
+             // ghLink="To be added"
+              // demoLink="To be added" <--------Please include a demo link here
             />
           </Col>
 
@@ -80,13 +84,46 @@ function Projects() {
             <ProjectCard
               imgPath={emotion}
               isBlog={false}
-              title="Face Recognition and Emotion Detection"
-              description="Trained a CNN classifier using 'FER-2013 dataset' with Keras and tensorflow backened. The classifier sucessfully predicted the various types of emotions of human. And the highest accuracy obtained with the model was 60.1%.
-              Then used Open-CV to detect the face in an image and then pass the face to the classifer to predict the emotion of a person."
-              ghLink="https://github.com/soumyajit4419/Face_And_Emotion_Detection"
-              // demoLink="https://blogs.soumya-jit.tech/"      <--------Please include a demo link here 
+              title="Intelligent Game Agent for Connect 4"
+              description="Developed an AI agent to play Connect 4 using multiple search strategies including Minimax, Alpha-Beta Pruning, and Monte Carlo Tree Search (MCTS). The agent intelligently selects optimal moves in real time, simulating human-like gameplay. Evaluation functions and heuristic pruning were implemented to improve decision efficiency."
+             // ghLink="link to be added"
+              // demoLink="To be added"      <--------Please include a demo link here 
             />
           </Col>
+
+          <Col md={4} className="project-card">
+            <ProjectCard
+              imgPath={emotion}
+              isBlog={false}
+              title="Goal-Based Maze Solving Agent"
+              description="Built a pathfinding agent to solve mazes using search algorithms including Breadth-First Search (BFS), Depth-First Search (DFS), Greedy Best-First Search (GBFS), and A* (A-star). The solution includes performance metrics like nodes expanded, path cost, and runtime, and visualizes the optimal path. Applicable to robotics and navigation systems."
+             // ghLink="link to be added"
+              // demoLink="To be added"      <--------Please include a demo link here 
+            />
+          </Col>
+
+          <Col md={4} className="project-card">
+            <ProjectCard
+              imgPath={emotion}
+              isBlog={false}
+              title="Reflex Agent for Smart Vacuum Cleaner Simulation"
+              description="Simulated a vacuum cleaning robot using reflex-based agent architecture in a grid environment. Developed multiple agent strategies to compare cleaning efficiency. Evaluated performance based on energy consumption and environment coverage. Inspired by real-world robotic automation and smart home solutions."
+             // ghLink="link to be added"
+              // demoLink="To be added"      <--------Please include a demo link here 
+            />
+          </Col>
+
+          <Col md={4} className="project-card">
+            <ProjectCard
+              imgPath={emotion}
+              isBlog={false}
+              title="Adaptive  N-Queens Problemn Solver"
+              description="Engineered a solver for the N-Queens problem using both classical and heuristic approaches such as Backtracking, Simulated Annealing, and Genetic Algorithms. Compared performance based on solution accuracy and computational time, demonstrating algorithm trade-offs in constraint satisfaction problems."
+             // ghLink="link to be added"
+              // demoLink="To be added"      <--------Please include a demo link here 
+            />
+          </Col>
+
         </Row>
       </Container>
     </Container>

@@ -6,7 +6,7 @@ import logo from "../Assets/logo.png";
 import Button from "react-bootstrap/Button";
 import { Link } from "react-router-dom";
 import { CgGitFork } from "react-icons/cg";
-import { ImBlog } from "react-icons/im";
+import { FaBookOpen } from "react-icons/fa";
 import {
   AiFillStar,
   AiOutlineHome,
@@ -92,19 +92,19 @@ function NavBar() {
               </Nav.Link>
             </Nav.Item>
 
-            <Nav.Item>
+          /* <Nav.Item>
               <Nav.Link
-                href="https://soumyajitblogs.vercel.app/"
+                href="https://ijiemr.org/public/uploads/paper/826371680760169.pdf"
                 target="_blank"
                 rel="noreferrer"
               >
-                <ImBlog style={{ marginBottom: "2px" }} /> Blogs
+               <FaBookOpen style={{ marginBottom: "2px" }} /> Publications
               </Nav.Link>
-            </Nav.Item>
+            </Nav.Item>*/
 
             <Nav.Item className="fork-btn">
               <Button
-                href="https://github.com/soumyajit4419/Portfolio"
+                href="https://github.com/Tarun1928/My-Portfolio"
                 target="_blank"
                 className="fork-btn-inner"
               >
