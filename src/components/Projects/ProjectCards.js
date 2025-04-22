@@ -7,20 +7,24 @@ import { BsGithub } from "react-icons/bs";
 function ProjectCards(props) {
   return (
     <Card className="project-card-view">
-      
-      <Card.Img
-        variant="top"
-        src={props.imgPath}
-        alt="card-img"
-        style={{
-          width: "250px",
-          height: "250px",
-          objectFit: "cover",
-          borderRadius: "10px",
-          margin: "0 auto",
-          display: "block",
-           }}
-      />
+
+<Card.Img
+  variant="top"
+  src={props.imgPath}
+  alt="card-img"
+  style={{
+    width: "250px",
+    height: "250px",
+    objectFit: "contain", // ensures full image is visible
+    borderRadius: "10px",
+    margin: "0 auto",
+    display: "block",
+    backgroundColor: "#fff" // optional: for transparent PNGs or contrast
+  }}
+/>
+
+
+
 
       <Card.Body>
         <Card.Title>{props.title}</Card.Title>
