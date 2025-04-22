@@ -25,11 +25,11 @@ function Home2() {
               <br />
               <br />
               My field of interest includes&nbsp;
-              <i>
-                <b className="purple">building end-to-end web applications</b>, working with&nbsp;
-                <b className="purple">cloud-native platforms</b>, and applying&nbsp;
-                <b className="purple">software engineering best practices</b> across different tech stacks.
-              </i>
+            
+                <b className="purple"><i>building end-to-end web applications</i></b>, working with&nbsp;
+                <b className="purple"><i>cloud-native platforms</i></b>, and applying&nbsp;
+                <b className="purple"><i>software engineering best practices</i></b> across different tech stacks.
+             
 
               <br />
               <br />
