@@ -7,7 +7,8 @@ import emotion from "../../Assets/Projects/emotion.png";
 import editor from "../../Assets/Projects/codeEditor.png";
 import chatify from "../../Assets/Projects/chatify.png";
 import suicide from "../../Assets/Projects/suicide.png";
-import bitsOfCode from "../../Assets/Projects/blog.png";
+import scbds from "../../Assets/Projects/scbds.png";
+
 
 function Projects() {
   return (
@@ -38,7 +39,7 @@ function Projects() {
 
           <Col md={4} className="project-card">
             <ProjectCard
-              imgPath={chatify}
+              imgPath={scbds}
               isBlog={false}
               title="SELFIE CAPTURING BY DETECTING SMILE"
               description="This project focused on automatically capturing selfies by detecting smiles. Along with this main feature, we included additional functionalities like photo capture, image browsing, filters, video recording, and adding watermarks to images. The goal was to create a user-friendly interface on a laptop, similar to the experience of using a mobile camera.Chat Room or Workspace to share resources and hangout with friends build with react.js, Material-UI, and Firebase. Have features which allows user for realtime messaging, image sharing as well as supports reactions on messages."
