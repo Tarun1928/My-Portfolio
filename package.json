@@ -2,7 +2,6 @@
   "name": "portfolio",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://Tarun1928.github.io/My-Portfolio",
 
   "dependencies": {
     "@react-pdf/renderer": "^2.2.0",
