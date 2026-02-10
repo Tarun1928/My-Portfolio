@@ -36,7 +36,7 @@ This is my personal portfolio website built using modern frontend tools. It feat
 
 ## 🚀 Built With
 
-- React.js
+- React.js + Vite
 - Bootstrap & CSS
 - Node.js (for backend projects)
 - Firebase / Vercel (for hosting)
@@ -63,7 +63,14 @@ Clone this repo and make it your own!
 git clone https://github.com/Tarun1928/V2.git
 cd V2
 npm install
-npm start
+npm run dev
+```
+
+### Production build
+
+```bash
+npm run build
+npm run preview
 ```
 
 ---
