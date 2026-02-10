@@ -64,3 +64,21 @@ git clone https://github.com/Tarun1928/V2.git
 cd V2
 npm install
 npm start
+```
+
+---
+
+## 🔄 Updating the Live Site (Google Indexed)
+
+After making content changes, redeploy and notify Google so search results show the latest version:
+
+```bash
+npm run deploy
+```
+
+Then in **Google Search Console**:
+1. Open **URL Inspection** for `https://tarunkonagallaportfolio.com`
+2. Click **Request Indexing**
+3. Re-submit `https://tarunkonagallaportfolio.com/sitemap.xml` under **Sitemaps**
+
+This helps Google refresh cached metadata and page content faster.
