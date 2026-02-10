@@ -37,7 +37,7 @@ function Footer() {
         <Col md="4" className="footer-copywright">
           <h3>Copyright © {year}</h3>
           {lastUpdated && (
-            <p style={{ marginTop: "8px", marginBottom: 0 }}>
+            <p className="footer-last-updated">
               Last updated: {lastUpdated}
             </p>
           )}

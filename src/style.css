@@ -432,6 +432,14 @@ button:focus {
   margin-top: 0.5em !important;
   margin-bottom: 0.5em !important;
 }
+
+.footer-last-updated {
+  color: #c8c5d4;
+  font-size: 0.85em;
+  margin-top: 8px;
+  margin-bottom: 0;
+}
+
 .footer-icons {
   margin-top: 0.5em !important;
   margin-bottom: 0.5em !important;
