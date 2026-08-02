@@ -84,8 +84,8 @@ npm run deploy
 ```
 
 Then in **Google Search Console**:
-1. Open **URL Inspection** for `https://tarunkonagallaportfolio.com`
+1. Open **URL Inspection** for `https://tarunkonagalla.com`
 2. Click **Request Indexing**
-3. Re-submit `https://tarunkonagallaportfolio.com/sitemap.xml` under **Sitemaps**
+3. Re-submit `https://tarunkonagalla.com/sitemap.xml` under **Sitemaps**
 
 This helps Google refresh cached metadata and page content faster.
