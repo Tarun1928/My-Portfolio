@@ -8,10 +8,10 @@ function AboutCard() {
       <Card.Body>
         <blockquote className="blockquote mb-0">
           <p style={{ textAlign: "justify" }}>
-            Hi everyone! I'm <span className="purple">Tarun Konagalla</span> from 
-            <span className="purple"> Dallas, Texas</span>.
+            Hi everyone! I'm <span className="purple">Tarun Konagalla</span> from
+            <span className="purple"> Austin, Texas</span>.
             <br />
-            I'm currently pursuing my Master's in Computer Science at Southern Methodist University.
+            I'm currently working at Amazon as a Software Development Engineer.
             <br />
             <br />
             Beyond coding, here are a few things I genuinely enjoy:
