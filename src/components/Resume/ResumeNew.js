@@ -2,14 +2,17 @@ import React, { useState, useEffect } from "react";
 import { Container, Row } from "react-bootstrap";
 import Button from "react-bootstrap/Button";
 import Particle from "../Particle";
-import pdf from "../../Assets/../Assets/Tarun_Resume.pdf";
+import pdf from "../../Assets/Tarun_Resume.pdf";
 import { AiOutlineDownload } from "react-icons/ai";
 import { Document, Page, pdfjs } from "react-pdf";
-import "react-pdf/dist/esm/Page/AnnotationLayer.css";
+import "react-pdf/dist/Page/AnnotationLayer.css";
+import "react-pdf/dist/Page/TextLayer.css";
 pdfjs.GlobalWorkerOptions.workerSrc = new URL(
-  "pdfjs-dist/build/pdf.worker.min.js",
+  "pdfjs-dist/build/pdf.worker.min.mjs",
   import.meta.url
 ).toString();
+
+const pdfOptions = { isEvalSupported: false };
 
 function ResumeNew() {
   const [width, setWidth] = useState(1200);
@@ -36,7 +39,11 @@ function ResumeNew() {
         </Row>
 
         <Row className="resume">
-          <Document file={pdf} className="d-flex justify-content-center">
+          <Document
+            file={pdf}
+            options={pdfOptions}
+            className="d-flex justify-content-center"
+          >
             <Page pageNumber={1} scale={width > 786 ? 1.7 : 0.6} />
           </Document>
         </Row>

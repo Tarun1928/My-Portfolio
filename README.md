@@ -1,6 +1,6 @@
 <h2 align="center">
   Tarun Konagalla Portfolio Website - v2.0<br/>
-  <a href="https://your-live-portfolio-link.com" target="_blank">tarunkonagalla.dev</a>
+  <a href="https://tarunkonagalla.com" target="_blank">tarunkonagalla.com</a>
 </h2>
 
 <div align="center">
@@ -14,16 +14,16 @@
 [![forthebadge](https://forthebadge.com/images/badges/built-with-love.svg)](https://forthebadge.com) &nbsp;
 [![forthebadge](https://forthebadge.com/images/badges/made-with-javascript.svg)](https://forthebadge.com) &nbsp;
 [![forthebadge](https://forthebadge.com/images/badges/open-source.svg)](https://forthebadge.com) &nbsp;
-![GitHub Repo stars](https://img.shields.io/github/stars/Tarun1928/V2?color=red&logo=github&style=for-the-badge) &nbsp;
-![GitHub forks](https://img.shields.io/github/forks/Tarun1928/V2?color=red&logo=github&style=for-the-badge)
+![GitHub Repo stars](https://img.shields.io/github/stars/Tarun1928/My-Portfolio?color=red&logo=github&style=for-the-badge) &nbsp;
+![GitHub forks](https://img.shields.io/github/forks/Tarun1928/My-Portfolio?color=red&logo=github&style=for-the-badge)
 
 </div>
 
 <h3 align="center">
     🔹
-    <a href="https://github.com/Tarun1928/V2/issues">Report Bug</a> &nbsp; &nbsp;
+    <a href="https://github.com/Tarun1928/My-Portfolio/issues">Report Bug</a> &nbsp; &nbsp;
     🔹
-    <a href="https://github.com/Tarun1928/V2/issues">Request Feature</a>
+    <a href="https://github.com/Tarun1928/My-Portfolio/issues">Request Feature</a>
 </h3>
 
 ---
@@ -38,9 +38,7 @@ This is my personal portfolio website built using modern frontend tools. It feat
 
 - React.js + Vite
 - Bootstrap & CSS
-- Node.js (for backend projects)
-- Firebase / Vercel (for hosting)
-- Visual Studio Code
+- Vercel hosting
 
 ---
 
@@ -57,12 +55,12 @@ This is my personal portfolio website built using modern frontend tools. It feat
 
 ## 🛠 Getting Started
 
-Clone this repo and make it your own!
+Clone the repository and install its dependencies:
 
 ```bash
-git clone https://github.com/Tarun1928/V2.git
-cd V2
-npm install
+git clone https://github.com/Tarun1928/My-Portfolio.git
+cd My-Portfolio
+npm ci
 npm run dev
 ```
 
@@ -75,15 +73,15 @@ npm run preview
 
 ---
 
-## 🔄 Updating the Live Site (Google Indexed)
+## 🔄 Updating the Live Site
 
-After making content changes, redeploy and notify Google so search results show the latest version:
+Vercel automatically deploys the production site when changes are pushed to `main`:
 
 ```bash
-npm run deploy
+git push origin main
 ```
 
-Then in **Google Search Console**:
+For significant content or metadata updates, request a refresh in **Google Search Console**:
 1. Open **URL Inspection** for `https://tarunkonagalla.com`
 2. Click **Request Indexing**
 3. Re-submit `https://tarunkonagalla.com/sitemap.xml` under **Sitemaps**
