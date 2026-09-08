@@ -7,6 +7,7 @@ import {
   AiFillInstagram,
 } from "react-icons/ai";
 import { FaLinkedinIn } from "react-icons/fa";
+import { HiOutlineMail } from "react-icons/hi";
 
 function Home2() {
   return (
@@ -51,7 +52,19 @@ function Home2() {
             <p>
               Feel free to <span className="purple">connect </span>with me
             </p>
+            <a className="contact-email" href="mailto:tarunkonagalla2806@gmail.com">
+              <HiOutlineMail aria-hidden="true" /> tarunkonagalla2806@gmail.com
+            </a>
             <ul className="home-about-social-links">
+              <li className="social-icons">
+                <a
+                  href="mailto:tarunkonagalla2806@gmail.com"
+                  aria-label="Email Tarun"
+                  className="icon-colour home-social-icons"
+                >
+                  <HiOutlineMail />
+                </a>
+              </li>
               <li className="social-icons">
                 <a
                   href="https://github.com/Tarun1928"

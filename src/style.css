@@ -352,6 +352,15 @@ html {
   position: relative !important;
   padding-inline-start: 0 !important;
 }
+.contact-email {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.45rem;
+  color: #e3c8ff;
+  font-weight: 600;
+  text-decoration: none;
+}
+.contact-email:hover { color: white; text-decoration: underline; }
 
 .home-social-icons {
   position: relative !important;
