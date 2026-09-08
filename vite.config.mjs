@@ -1,6 +1,6 @@
 import { defineConfig } from "vite";
 import react from "@vitejs/plugin-react";
-import hostingConfig from "./vercel.json";
+import hostingConfig from "./vercel.json" with { type: "json" };
 
 export default defineConfig({
   plugins: [react()],
@@ -11,18 +11,6 @@ export default defineConfig({
     headers: Object.fromEntries(
       hostingConfig.headers[0].headers.map(({ key, value }) => [key, value])
     ),
-  },
-  esbuild: {
-    loader: "jsx",
-    include: /src\/.*\.[jt]sx?$/,
-    exclude: [],
-  },
-  optimizeDeps: {
-    esbuildOptions: {
-      loader: {
-        ".js": "jsx",
-      },
-    },
   },
   test: {
     environment: "jsdom",
