@@ -24,7 +24,8 @@ function NavBar() {
       updateNavbar(window.scrollY >= 20);
     }
 
-    window.addEventListener("scroll", scrollHandler);
+    scrollHandler();
+    window.addEventListener("scroll", scrollHandler, { passive: true });
     return () => window.removeEventListener("scroll", scrollHandler);
   }, []);
 
@@ -37,12 +38,13 @@ function NavBar() {
     >
       <Container>
         <Navbar.Brand as={Link} to="/" className="d-flex">
-          <img src={logo} className="img-fluid logo" alt="brand" />
+          <img src={logo} className="img-fluid logo" alt="Tarun Konagalla" />
         </Navbar.Brand>
         <Navbar.Toggle
           aria-controls="responsive-navbar-nav"
+          aria-expanded={expand}
           onClick={() => {
-            updateExpanded(expand ? false : "expanded");
+            updateExpanded((expanded) => !expanded);
           }}
         >
           <span></span>
@@ -94,7 +96,8 @@ function NavBar() {
               <Button
                 href="https://github.com/Tarun1928/My-Portfolio"
                 target="_blank"
-                rel="noreferrer"
+                rel="noopener noreferrer"
+                aria-label="View portfolio source on GitHub"
                 className="fork-btn-inner"
               >
                 <CgGitFork style={{ fontSize: "1.2em" }} />{" "}

@@ -2,11 +2,6 @@ import React from "react";
 import { Container, Row, Col } from "react-bootstrap";
 import ProjectCard from "./ProjectCards";
 import Particle from "../Particle";
-import leaf from "../../Assets/Projects/leaf.png";
-import emotion from "../../Assets/Projects/emotion.png";
-import editor from "../../Assets/Projects/codeEditor.png";
-import chatify from "../../Assets/Projects/chatify.png";
-import suicide from "../../Assets/Projects/suicide.png";
 import scbds from "../../Assets/Projects/scbds.png";
 import shwa from "../../Assets/Projects/shwa.png";
 import aad from "../../Assets/Projects/aad.png";
@@ -49,9 +44,7 @@ function Projects() {
               imgPath={scbds}
               isBlog={false}
               title="Selfie capturing by Detecting Smile"
-              description="This project focused on automatically capturing selfies by detecting smiles. Along with this main feature, we included additional functionalities like photo capture, image browsing, filters, video recording, and adding watermarks to images. The goal was to create a user-friendly interface on a laptop, similar to the experience of using a mobile camera.Chat Room or Workspace to share resources and hangout with friends build with react.js, Material-UI, and Firebase. Have features which allows user for realtime messaging, image sharing as well as supports reactions on messages."
-             // ghLink="https://github.com/soumyajit4419/Chatify"
-              //demoLink="https://chatify-49.web.app/"
+              description="This project focused on automatically capturing selfies by detecting smiles. Along with this main feature, we included additional functionalities like photo capture, image browsing, filters, video recording, and adding watermarks to images. The goal was to create a user-friendly interface on a laptop, similar to the experience of using a mobile camera."
             />
           </Col>
 
@@ -60,9 +53,7 @@ function Projects() {
               imgPath={shwa}
               isBlog={false}
               title="Smart Hiring Web Application"
-              description="Designed and developed a job hiring portal using ReactJS to streamline the recruitment process. The application allows users to create profiles, explore job listings, and apply for roles tailored to their skills. Implemented features like advanced search filters and user-friendly interfaces to enhance user experience and accurately match candidates with opportunities.Designed and developed a job hiring portal using ReactJS to streamline the recruitment process. The application allows users to create profiles, explore job listings, and apply for roles tailored to their skills. Implemented features like advanced search filters and user-friendly interfaces to enhance user experience and accurately match candidates with opportunities."
-             // ghLink="https://github.com/soumyajit4419/Editor.io"
-              //demoLink="https://editor.soumya-jit.tech/"              
+              description="Designed and developed a job hiring portal using ReactJS to streamline the recruitment process. The application allows users to create profiles, explore job listings, and apply for roles tailored to their skills. Implemented features like advanced search filters and user-friendly interfaces to enhance user experience and accurately match candidates with opportunities."
             />
           </Col>
 
@@ -125,7 +116,7 @@ function Projects() {
             <ProjectCard
               imgPath={nqueen}
               isBlog={false}
-              title="Adaptive  N-Queens Problemn Solver"
+              title="Adaptive N-Queens Problem Solver"
               description="Engineered a solver for the N-Queens problem using both classical and heuristic approaches such as Backtracking, Simulated Annealing, and Genetic Algorithms. Compared performance based on solution accuracy and computational time, demonstrating algorithm trade-offs in constraint satisfaction problems."
              // ghLink="link to be added"
               // demoLink="To be added"      <--------Please include a demo link here 

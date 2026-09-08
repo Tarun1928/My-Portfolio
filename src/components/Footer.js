@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import React from "react";
 import { Container, Row, Col } from "react-bootstrap";
 import {
   AiFillGithub,
@@ -9,24 +9,13 @@ import { FaLinkedinIn } from "react-icons/fa";
 function Footer() {
   let date = new Date();
   let year = date.getFullYear();
-  const [lastUpdated, setLastUpdated] = useState("");
-
-  useEffect(() => {
-    if (typeof document === "undefined") return;
-
-    const parsed = new Date(document.lastModified);
-    if (Number.isNaN(parsed.getTime())) return;
-
-    setLastUpdated(
-      parsed.toLocaleString("en-US", {
-        year: "numeric",
-        month: "long",
-        day: "numeric",
-        hour: "numeric",
-        minute: "2-digit",
-      })
-    );
-  }, []);
+  const lastUpdated = new Date(import.meta.env.VITE_BUILD_TIME).toLocaleString("en-US", {
+    year: "numeric",
+    month: "long",
+    day: "numeric",
+    hour: "numeric",
+    minute: "2-digit",
+  });
 
   return (
     <Container fluid className="footer">
@@ -47,6 +36,7 @@ function Footer() {
             <li className="social-icons">
               <a
                 href="https://github.com/Tarun1928"
+                aria-label="GitHub"
                 style={{ color: "white" }}
                 target="_blank" 
                 rel="noopener noreferrer"
@@ -57,6 +47,7 @@ function Footer() {
             <li className="social-icons">
               <a
                 href="https://www.linkedin.com/in/tarunkonagalla/"
+                aria-label="LinkedIn"
                 style={{ color: "white" }}
                 target="_blank" 
                 rel="noopener noreferrer"
@@ -67,6 +58,7 @@ function Footer() {
             <li className="social-icons">
               <a
                 href="https://www.instagram.com/tarunkonagalla"
+                aria-label="Instagram"
                 style={{ color: "white" }}
                 target="_blank" 
                 rel="noopener noreferrer"

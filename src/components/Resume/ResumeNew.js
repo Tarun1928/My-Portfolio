@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React, { useState, useEffect, useRef } from "react";
 import { Container, Row } from "react-bootstrap";
 import Button from "react-bootstrap/Button";
 import Particle from "../Particle";
@@ -15,10 +15,17 @@ pdfjs.GlobalWorkerOptions.workerSrc = new URL(
 const pdfOptions = { isEvalSupported: false };
 
 function ResumeNew() {
-  const [width, setWidth] = useState(1200);
+  const containerRef = useRef(null);
+  const [width, setWidth] = useState(null);
+  const [numPages, setNumPages] = useState(0);
 
   useEffect(() => {
-    setWidth(window.innerWidth);
+    const container = containerRef.current;
+    const observer = new ResizeObserver(([entry]) => {
+      setWidth(Math.min(1040, Math.floor(entry.contentRect.width)));
+    });
+    observer.observe(container);
+    return () => observer.disconnect();
   }, []);
 
   return (
@@ -28,6 +35,7 @@ function ResumeNew() {
         <Row style={{ justifyContent: "center", position: "relative" }}>
           <Button
             variant="primary"
+            role="link"
             href={pdf}
             target="_blank"
             rel="noreferrer"
@@ -39,18 +47,26 @@ function ResumeNew() {
         </Row>
 
         <Row className="resume">
-          <Document
-            file={pdf}
-            options={pdfOptions}
-            className="d-flex justify-content-center"
-          >
-            <Page pageNumber={1} scale={width > 786 ? 1.7 : 0.6} />
-          </Document>
+          <div ref={containerRef} className="resume-document">
+            <Document
+              file={pdf}
+              options={pdfOptions}
+              onLoadSuccess={({ numPages: pages }) => setNumPages(pages)}
+              loading={<p role="status">Loading résumé…</p>}
+              error={<p role="alert">The résumé preview could not load. Please use the Download CV link.</p>}
+              className="d-flex flex-column align-items-center gap-3"
+            >
+              {width > 0 && Array.from({ length: numPages }, (_, index) => (
+                <Page key={index + 1} pageNumber={index + 1} width={width} />
+              ))}
+            </Document>
+          </div>
         </Row>
 
         <Row style={{ justifyContent: "center", position: "relative" }}>
           <Button
             variant="primary"
+            role="link"
             href={pdf}
             target="_blank"
             rel="noreferrer"

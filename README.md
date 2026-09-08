@@ -57,6 +57,9 @@ This is my personal portfolio website built using modern frontend tools. It feat
 
 Clone the repository and install its dependencies:
 
+Use the latest Node.js 22 LTS patch (minimum 22.13) or Node.js 24 LTS.
+With nvm, run `nvm install` and `nvm use` to use the version in `.nvmrc`.
+
 ```bash
 git clone https://github.com/Tarun1928/My-Portfolio.git
 cd My-Portfolio
@@ -70,6 +73,27 @@ npm run dev
 npm run build
 npm run preview
 ```
+
+### Verification and dependency maintenance
+
+```bash
+npm test
+npm run build
+npm run audit
+```
+
+CI runs tests, a production build, and a dependency audit on pushes, pull requests,
+and weekly. High and critical advisories in both application and build dependencies
+fail the audit. Dependabot checks npm packages and GitHub Actions weekly.
+For compatible updates, run `npm update`, repeat the checks above, and commit both
+`package.json` (if changed) and `package-lock.json`.
+
+`vercel.json` defines the SPA fallback for direct route visits and the production
+security headers. `npm run preview` also applies these headers so browser checks
+exercise the production Content Security Policy. Verify the routing on a Vercel
+preview deployment before publishing hosting changes.
+The footer's last-updated time is captured during the build and displayed in the
+visitor's local time zone, so it stays consistent across page reloads.
 
 ---
 

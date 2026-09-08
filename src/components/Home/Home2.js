@@ -52,6 +52,7 @@ function Home2() {
               <li className="social-icons">
                 <a
                   href="https://github.com/Tarun1928"
+                  aria-label="GitHub"
                   target="_blank"
                   rel="noreferrer"
                   className="icon-colour  home-social-icons"
@@ -63,6 +64,7 @@ function Home2() {
               <li className="social-icons">
                 <a
                   href="https://www.linkedin.com/in/tarunkonagalla/"
+                  aria-label="LinkedIn"
                   target="_blank"
                   rel="noreferrer"
                   className="icon-colour  home-social-icons"
@@ -73,6 +75,7 @@ function Home2() {
               <li className="social-icons">
                 <a
                   href="https://www.instagram.com/tarunkonagalla"
+                  aria-label="Instagram"
                   target="_blank"
                   rel="noreferrer"
                   className="icon-colour home-social-icons"

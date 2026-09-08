@@ -3,7 +3,7 @@
   "version": "0.1.0",
   "private": true,
   "engines": {
-    "node": ">=20"
+    "node": "^22.13.0 || >=24.0.0"
   },
   "dependencies": {
     "@tsparticles/react": "^3.0.0",
@@ -17,16 +17,15 @@
     "react-parallax-tilt": "^1.7.42",
     "react-pdf": "^10.4.1",
     "react-router-dom": "^7.18.2",
-    "tsparticles": "^3.0.0",
-    "typewriter-effect": "^2.18.2",
-    "web-vitals": "^2.1.4"
+    "typewriter-effect": "^2.18.2"
   },
   "scripts": {
     "dev": "vite",
     "start": "vite",
     "build": "vite build",
     "preview": "vite preview",
-    "test": "vitest run"
+    "test": "vitest run",
+    "audit": "npm audit --audit-level=high"
   },
   "browserslist": {
     "production": [

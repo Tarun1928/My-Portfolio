@@ -11,7 +11,9 @@ function ProjectCards(props) {
 <Card.Img
   variant="top"
   src={props.imgPath}
-  alt="card-img"
+  alt={props.title}
+  loading="lazy"
+  decoding="async"
   style={{
     width: "100%",
     maxWidth: "250px",
